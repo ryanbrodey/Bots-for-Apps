@@ -2,7 +2,7 @@ import tweepy
 
 # Replace with your own API keys and tokens
 API_KEY = '38SXmEkz463znqjBSmwVe1vG6'
-API_SECRET_KEY = 'b6sP86QiqFp8dsTCdc8606UwU1VLUNRT3ypun9IhbvAbbVv2Wj'
+API_SECRET_KEY = 'b6sP86QiqFp9dsTCdc8606UwU1VLUNRT3ypun9IhbvAbbVv2Wj'
 ACCESS_TOKEN = '972704302622916608-V1szOLXpx0GpvUlkmyfJMoDvvwZTcRc'
 ACCESS_TOKEN_SECRET = '0CVQv4JxUDEls6Y0aAoLYYVg7I1ar68cpiH6ZQ5eq9zew'
 
