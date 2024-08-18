@@ -1,10 +1,11 @@
 import tweepy
 
 # Replace with your own API keys and tokens
-API_KEY = '38SXmEkz463znqjBSmwVe1vG6'
-API_SECRET_KEY = 'b6sP86QiqFp9dsTCdc8606UwU1VLUNRT3ypun9IhbvAbbVv2Wj'
-ACCESS_TOKEN = '972704302622916608-V1szOLXpx0GpvUlkmyfJMoDvvwZTcRc'
-ACCESS_TOKEN_SECRET = '0CVQv4JxUDEls6Y0aAoLYYVg7I1ar68cpiH6ZQ5eq9zew'
+# NOTE I am not showing my actual keys and tokens on here for security breach reasons
+API_KEY = '38SnqjBSmwVe1vG6'
+API_SECRET_KEY = 'b6sP86QiCdc8606UwU1VLUNRT3ybbVv2Wj'
+ACCESS_TOKEN = '972704608-V1szOlkmyfJMoDvvwZTcRc'
+ACCESS_TOKEN_SECRET = '0CVQv4JxUDQ5eq9zew'
 
 # Authenticate to Twitter
 auth = tweepy.OAuthHandler(API_KEY, API_SECRET_KEY)
