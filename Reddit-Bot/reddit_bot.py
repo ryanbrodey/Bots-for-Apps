@@ -26,7 +26,7 @@ reddit_instance = praw.Reddit(
 # Section 2
 # This section submits post in any subreddit you choose with any message 
 subreddit = reddit_instance.subreddit("testingground4bots")
-subreddit.submit(title="This is my test post from my bot", selftext="Hellow how are you doing")
+subreddit.submit(title="This is my test post from my bot", selftext="Hello how are you doing")
 
 # Section 3
 # This section gets comments from a subreddit post, and has a part that is also capable of replying to comments 
