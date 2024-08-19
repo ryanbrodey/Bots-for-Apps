@@ -1,0 +1,566 @@
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 --version
+Python 3.12.4
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % exit()
+function> python3 reddit_bot.py
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Hello word
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % pip install praw
+Requirement already satisfied: praw in ./.venv/lib/python3.12/site-packages (7.7.1)
+Requirement already satisfied: prawcore<3,>=2.1 in ./.venv/lib/python3.12/site-packages (from praw) (2.4.0)
+Requirement already satisfied: update-checker>=0.18 in ./.venv/lib/python3.12/site-packages (from praw) (0.18.0)
+Requirement already satisfied: websocket-client>=0.54.0 in ./.venv/lib/python3.12/site-packages (from praw) (1.8.0)
+Requirement already satisfied: requests<3.0,>=2.6.0 in ./.venv/lib/python3.12/site-packages (from prawcore<3,>=2.1->praw) (2.32.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./.venv/lib/python3.12/site-packages (from requests<3.0,>=2.6.0->prawcore<3,>=2.1->praw) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in ./.venv/lib/python3.12/site-packages (from requests<3.0,>=2.6.0->prawcore<3,>=2.1->praw) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./.venv/lib/python3.12/site-packages (from requests<3.0,>=2.6.0->prawcore<3,>=2.1->praw) (2.2.2)
+Requirement already satisfied: certifi>=2017.4.17 in ./.venv/lib/python3.12/site-packages (from requests<3.0,>=2.6.0->prawcore<3,>=2.1->praw) (2024.7.4)
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 pip instal praw
+/Library/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/ryanbrodey/Desktop/code reddit bot/pip': [Errno 2] No such file or directory
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % pip3.12 install praw
+
+Requirement already satisfied: praw in ./.venv/lib/python3.12/site-packages (7.7.1)
+Requirement already satisfied: prawcore<3,>=2.1 in ./.venv/lib/python3.12/site-packages (from praw) (2.4.0)
+Requirement already satisfied: update-checker>=0.18 in ./.venv/lib/python3.12/site-packages (from praw) (0.18.0)
+Requirement already satisfied: websocket-client>=0.54.0 in ./.venv/lib/python3.12/site-packages (from praw) (1.8.0)
+Requirement already satisfied: requests<3.0,>=2.6.0 in ./.venv/lib/python3.12/site-packages (from prawcore<3,>=2.1->praw) (2.32.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./.venv/lib/python3.12/site-packages (from requests<3.0,>=2.6.0->prawcore<3,>=2.1->praw) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in ./.venv/lib/python3.12/site-packages (from requests<3.0,>=2.6.0->prawcore<3,>=2.1->praw) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./.venv/lib/python3.12/site-packages (from requests<3.0,>=2.6.0->prawcore<3,>=2.1->praw) (2.2.2)
+Requirement already satisfied: certifi>=2017.4.17 in ./.venv/lib/python3.12/site-packages (from requests<3.0,>=2.6.0->prawcore<3,>=2.1->praw) (2024.7.4)
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3.12 reddit_bot.py
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3.12 reddit_bot.py
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3.12 reddit_bot.py
+Traceback (most recent call last):
+  File "/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.py", line 16, in <module>
+    print(reddit_instance.user.me())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/models/user.py", line 168, in me
+    user_data = self._reddit.get(API_PATH["me"])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 712, in get
+    return self._objectify_request(method="GET", params=params, path=path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 517, in _objectify_request
+    self.request(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 941, in request
+    return self._core.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 328, in request
+    return self._request_with_retries(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 234, in _request_with_retries
+    response, saved_exception = self._make_request(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 186, in _make_request
+    response = self._rate_limiter.call(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/rate_limit.py", line 46, in call
+    kwargs["headers"] = set_header_callback()
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 282, in _set_header_callback
+    self._authorizer.refresh()
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 425, in refresh
+    self._request_token(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 158, in _request_token
+    raise OAuthException(
+prawcore.exceptions.OAuthException: invalid_grant error processing request
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3.12 reddit_bot.py
+Traceback (most recent call last):
+  File "/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.py", line 16, in <module>
+    print(reddit_instance.user.me())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/models/user.py", line 168, in me
+    user_data = self._reddit.get(API_PATH["me"])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 712, in get
+    return self._objectify_request(method="GET", params=params, path=path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 517, in _objectify_request
+    self.request(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 941, in request
+    return self._core.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 328, in request
+    return self._request_with_retries(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 234, in _request_with_retries
+    response, saved_exception = self._make_request(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 186, in _make_request
+    response = self._rate_limiter.call(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/rate_limit.py", line 46, in call
+    kwargs["headers"] = set_header_callback()
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 282, in _set_header_callback
+    self._authorizer.refresh()
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 425, in refresh
+    self._request_token(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 158, in _request_token
+    raise OAuthException(
+prawcore.exceptions.OAuthException: invalid_grant error processing request
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+hello world
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+hello world
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % pyhton3 reddit_bot.py
+zsh: command not found: pyhton3
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python4 reddit_bot.py
+zsh: command not found: python4
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Traceback (most recent call last):
+  File "/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.py", line 16, in <module>
+    print(reddit_instance.user.me())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/models/user.py", line 168, in me
+    user_data = self._reddit.get(API_PATH["me"])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 712, in get
+    return self._objectify_request(method="GET", params=params, path=path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 517, in _objectify_request
+    self.request(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 941, in request
+    return self._core.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 328, in request
+    return self._request_with_retries(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 234, in _request_with_retries
+    response, saved_exception = self._make_request(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 186, in _make_request
+    response = self._rate_limiter.call(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/rate_limit.py", line 46, in call
+    kwargs["headers"] = set_header_callback()
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 282, in _set_header_callback
+    self._authorizer.refresh()
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 425, in refresh
+    self._request_token(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 158, in _request_token
+    raise OAuthException(
+prawcore.exceptions.OAuthException: invalid_grant error processing request
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Traceback (most recent call last):
+  File "/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.py", line 16, in <module>
+    print(reddit_instance.user.me())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/models/user.py", line 168, in me
+    user_data = self._reddit.get(API_PATH["me"])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 712, in get
+    return self._objectify_request(method="GET", params=params, path=path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 517, in _objectify_request
+    self.request(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 941, in request
+    return self._core.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 328, in request
+    return self._request_with_retries(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 234, in _request_with_retries
+    response, saved_exception = self._make_request(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 186, in _make_request
+    response = self._rate_limiter.call(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/rate_limit.py", line 46, in call
+    kwargs["headers"] = set_header_callback()
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 282, in _set_header_callback
+    self._authorizer.refresh()
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 425, in refresh
+    self._request_token(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 155, in _request_token
+    response = self._authenticator._post(url=url, **data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 59, in _post
+    raise ResponseException(response)
+prawcore.exceptions.ResponseException: received 401 HTTP response
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Traceback (most recent call last):
+  File "/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.py", line 16, in <module>
+    print(reddit_instance.user.me())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/models/user.py", line 168, in me
+    user_data = self._reddit.get(API_PATH["me"])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 712, in get
+    return self._objectify_request(method="GET", params=params, path=path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 517, in _objectify_request
+    self.request(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 941, in request
+    return self._core.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 328, in request
+    return self._request_with_retries(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 234, in _request_with_retries
+    response, saved_exception = self._make_request(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 186, in _make_request
+    response = self._rate_limiter.call(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/rate_limit.py", line 46, in call
+    kwargs["headers"] = set_header_callback()
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 282, in _set_header_callback
+    self._authorizer.refresh()
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 425, in refresh
+    self._request_token(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 155, in _request_token
+    response = self._authenticator._post(url=url, **data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 59, in _post
+    raise ResponseException(response)
+prawcore.exceptions.ResponseException: received 401 HTTP response
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Traceback (most recent call last):
+  File "/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.py", line 16, in <module>
+    print(reddit_instance.user.me())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/models/user.py", line 168, in me
+    user_data = self._reddit.get(API_PATH["me"])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 712, in get
+    return self._objectify_request(method="GET", params=params, path=path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 517, in _objectify_request
+    self.request(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 941, in request
+    return self._core.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 328, in request
+    return self._request_with_retries(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 234, in _request_with_retries
+    response, saved_exception = self._make_request(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 186, in _make_request
+    response = self._rate_limiter.call(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/rate_limit.py", line 46, in call
+    kwargs["headers"] = set_header_callback()
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 282, in _set_header_callback
+    self._authorizer.refresh()
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 425, in refresh
+    self._request_token(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 158, in _request_token
+    raise OAuthException(
+prawcore.exceptions.OAuthException: invalid_grant error processing request
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Responsible-Draw-99
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Responsible-Draw-99
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Traceback (most recent call last):
+  File "/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.py", line 16, in <module>
+    print(reddit_instance.user.me())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/models/user.py", line 168, in me
+    user_data = self._reddit.get(API_PATH["me"])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 712, in get
+    return self._objectify_request(method="GET", params=params, path=path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 517, in _objectify_request
+    self.request(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 941, in request
+    return self._core.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 328, in request
+    return self._request_with_retries(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 234, in _request_with_retries
+    response, saved_exception = self._make_request(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 186, in _make_request
+    response = self._rate_limiter.call(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/rate_limit.py", line 46, in call
+    kwargs["headers"] = set_header_callback()
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 282, in _set_header_callback
+    self._authorizer.refresh()
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 425, in refresh
+    self._request_token(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 158, in _request_token
+    raise OAuthException(
+prawcore.exceptions.OAuthException: invalid_grant error processing request
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Traceback (most recent call last):
+  File "/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.py", line 16, in <module>
+    print(reddit_instance.user.me())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/models/user.py", line 168, in me
+    user_data = self._reddit.get(API_PATH["me"])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 712, in get
+    return self._objectify_request(method="GET", params=params, path=path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 517, in _objectify_request
+    self.request(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/praw/reddit.py", line 941, in request
+    return self._core.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 328, in request
+    return self._request_with_retries(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 234, in _request_with_retries
+    response, saved_exception = self._make_request(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 186, in _make_request
+    response = self._rate_limiter.call(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/rate_limit.py", line 46, in call
+    kwargs["headers"] = set_header_callback()
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/sessions.py", line 282, in _set_header_callback
+    self._authorizer.refresh()
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 425, in refresh
+    self._request_token(
+  File "/Users/ryanbrodey/Desktop/code reddit bot/.venv/lib/python3.12/site-packages/prawcore/auth.py", line 158, in _request_token
+    raise OAuthException(
+prawcore.exceptions.OAuthException: invalid_grant error processing request
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Responsible-Draw-99
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Responsible-Draw-99
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+cats
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot %   
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+PSA: Advocating violence against your fellow human beings because they committed violence against an animal is a ban worthy offense.
+Norkie is 20 today 🎈🎂
+I adopted my first kitten - look at his paws 🐾❤️
+He was my cat only for three days, but I'll miss him forever 
+Michel loves taking selfies
+Your bowl is already full you DO NOT give me that look.
+What colour we calling this?
+I just adopted my first kitten
+I swear since getting cats my desire to have kids has vanished. Anyone else? lol 
+He tried the Ice-cream for the First time 
+I got a cute male and a... Wait please save me from this abomination
+Cat bites me when I sing. Why?
+Why he is doing that all the time? 🐱  
+Just shake his paw bruh😭
+Mokey loves catty 🩷
+Fell asleep with my hand out like this and woke up to her hugging it :')
+socks giving me his opinion on his new tunnel/bed from costco
+Tenderizing the Beef
+Miles is 4 months old, both parents were shorthaired cats, vet says he’s a big boy for his age
+Showing you my champion
+Selfie time 
+My cat has the eyes of an anime main character 
+New family member
+just got this little guy ❤️ say hi to Napoleon!
+my mom's cat wondering why I stopped playing with him hahahaha 
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % 
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+My cat is turning gray 😢
+My baby (not so much a baby anymore🥹) Patches turns 7 today🎉
+Mom told me to go touch grass but not what to do after that.
+Stray mamma cat, who’s very human shy has pushed her food bowl against my foot! I’m not sure if I should go for the pet yet.
+Starving stray, please help :(
+What’s wrong with this cat? 
+Picture comment option 
+Saw this right by his tail. He's the neighbors outside cat and they arnt concerned about it. 
+Mancha viendo el jardin
+the gamer kitten🐱
+Fed this girl for years and was finally able to trap her a few weeks ago. Trying to get her used to indoor life and looking for tips. She seems to have had minimal human contact other than me feeding her. Freaks out but not aggressive if you try to touch her.
+Found this outside my house, wouldn’t eat fish, it seems like it’s starving despite its fur.  I could feel its bones 
+"Hey! Where's my treats today, human?"
+My cat says hi
+Pour one out for Walter
+My buddy got a kitten that reminds me of my handsome man
+The fluffening
+Momma Found in Backyard
+My sister-in-law 19 yo Bubba. He is so handsome
+Meet Mori. He has a kack for comfy hideouts
+Sink cats
+She's feeling it lol
+This kitty found me...
+His toe beans are so cute I wanna eat them aaaa <3
+« Dad, it’s lunch time. »
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Pineapple Love 
+My cat is turning gray 😢
+My baby (not so much a baby anymore🥹) Patches turns 7 today🎉
+Mom told me to go touch grass but not what to do after that.
+Stray mamma cat, who’s very human shy has pushed her food bowl against my foot! I’m not sure if I should go for the pet yet.
+Starving stray, please help :(
+What’s wrong with this cat? 
+Picture comment option 
+Saw this right by his tail. He's the neighbors outside cat and they arnt concerned about it. 
+Mancha viendo el jardin
+the gamer kitten🐱
+Fed this girl for years and was finally able to trap her a few weeks ago. Trying to get her used to indoor life and looking for tips. She seems to have had minimal human contact other than me feeding her. Freaks out but not aggressive if you try to touch her.
+Found this outside my house, wouldn’t eat fish, it seems like it’s starving despite its fur.  I could feel its bones 
+"Hey! Where's my treats today, human?"
+My cat says hi
+Pour one out for Walter
+My buddy got a kitten that reminds me of my handsome man
+The fluffening
+Momma Found in Backyard
+My sister-in-law 19 yo Bubba. He is so handsome
+Meet Mori. He has a kack for comfy hideouts
+Sink cats
+She's feeling it lol
+This kitty found me...
+His toe beans are so cute I wanna eat them aaaa <3
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+What's your favorite color?
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+<praw.models.comment_forest.CommentForest object at 0x101e0e060>
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % reddit_bot.py
+zsh: command not found: reddit_bot.py
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+<praw.models.comment_forest.CommentForest object at 0x1027be060>
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+296
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+296
+1361
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3.12 reddit_bot.py
+Burgundy/maroon, with emerald green or silver close seconds
+emerald green, fuchsia, ruby red, black, cyan and orange
+Traceback (most recent call last):
+  File "/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.py", line 30, in <module>
+    if "emerald" in comment.body:
+                    ^^^^^^^^^^^^
+AttributeError: 'MoreComments' object has no attribute 'body'
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Burgundy/maroon, with emerald green or silver close seconds
+emerald green, fuchsia, ruby red, black, cyan and orange
+Traceback (most recent call last):
+  File "/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.py", line 30, in <module>
+    if "emerald" in comment.body:
+                    ^^^^^^^^^^^^
+AttributeError: 'MoreComments' object has no attribute 'body'
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Burgundy/maroon, with emerald green or silver close seconds
+emerald green, fuchsia, ruby red, black, cyan and orange
+Traceback (most recent call last):
+  File "/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.py", line 30, in <module>
+    if "emerald" in comment.body:
+                    ^^^^^^^^^^^^
+AttributeError: 'MoreComments' object has no attribute 'body'
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Responsible-Draw-99
+Rachael Lillis, the original voice of Misty and Jessie in Pokemon anime, has passed away at age 46
+N64 Platformer 'Glover' Returns As A Physical Switch Release
+After Nintendo's Abandonment, 'Chibi-Robo' Devs Crowdfund Next Game: 'koROBO' on Kickstarter and is almost fully funded
+Developers reportedly told not to expect Switch 2 to launch before April 2025 | VGC
+Nintendo should release it's main franchises' original soundtracks to spotify
+Assassin's Creed Shadows, Mirage, Valhalla, Odyssey & Origins Are Allegedly Getting Switch 2 Ports
+Always open your games right after you buy from Walmart
+Emio – The Smiling Man: Famicom Detective Club getting free demo, coming to #NintendoSwitch on 8/19 at 6pm PT
+Nintendo Museum Direct @ August 19 at 3pm PT
+Pre-orders for Glover physical release starting later today
+Level 5 Should Make a Yo-kai Watch collection for the Switch.
+Goemon Spiritual Successor "Bakeru" Coming West September 3
+THROWDOWN THURSDAY - FUCK CANCER
+The recent news about hifi rush being saved ended up making look at one of Nintendo's new ip on the switch and how it's basically in the opposite Position, That game is astral chain 
+On This Day in Nintendo History: Geist
+MARVEL vs. CAPCOM Fighting Collection: Arcade Classics Title Trailer: MARVEL SUPER HEROES
+Nif Nif Kickstarter Launch Trailer - Roguelike Deckbuilder for Parents and Kids
+MARVEL vs. CAPCOM Fighting Collection: Arcade Classics Title Trailer: X-MEN CHILDREN OF THE ATOM
+On This Day in Nintendo History: Kate Higgins
+On This Day in Nintendo History: Famicom Wars; Vertical Force
+The Legend of Zelda: Echoes of Wisdom - Bind/Reverse Ability Teaser
+Tetris® 99 – 42nd MAXIMUS CUP Gameplay Trailer - Nintendo Switch
+On This Day in Nintendo History: Popeye
+On This Day in Nintendo History: Gyromite; Top Players' Tennis
+Pokemon nintendogs?
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3.12 reddit_bot.py
+Traceback (most recent call last):
+  File "/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.py", line 27, in <module>
+    submission = reddit_instance.submission("1ev919g")
+                 ^^^^^^^^^^^^^^^
+NameError: name 'reddit_instance' is not defined
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.apy
+/Library/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/ryanbrodey/Desktop/code reddit bot/reddit_bot.apy': [Errno 2] No such file or directory
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+Responsible-Draw-99
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % python3 reddit_bot.py
+(.venv) ryanbrodey@Ryans-MacBook-Pro-3 code reddit bot % 
