@@ -1,12 +1,21 @@
 IMPORTANT: The API Keys and password in my code are not my actual ones for security and privacy reasons. For the very top section, you would replace that information with yours to use the bot. 
 
 The bot account I created for Reddit is: Responsible-Draw-99
-You can see what I posted from it using the code
 
-There are three main sections that are the main functions of this bot. They can not all be used at the same time. In order to use each one you turn the block of code into a comment or get rid of the comment. The section to submit posts is the one I have as not a comment because that is the most recent thing I ran.
+# Reddit Bot Project
 
-The first section retrieves submissions from subreddits. You can change the submission limit to any number (I used 25 in this instance), as well as filter the time (I chose by week). 
+This is a Reddit bot created in Python using the `praw` (Python Reddit API Wrapper) library. The bot performs various actions such as retrieving posts, submitting posts, retrieving comments, and replying to comments on Reddit.
 
-The second section submits posts in any subreddit of your choosing as well as any message you choose. The subreddit I posted in is "testingground4bots". You can post whatever message you want.
+## Features
 
-The third section gets comments from a subreddit post and also has a part capable of replying to comments
+- **Connect to Reddit API:** Authenticate with Reddit using credentials to interact with Reddit's API.
+- **Fetch Submissions:** Retrieve top posts from specific subreddits.
+- **Submit Posts:** Submit new posts to chosen subreddits.
+- **Retrieve Comments:** Extract comments from a Reddit post.
+- **Reply to Comments:** Automatically reply to specific comments based on keywords.
+
+## Prerequisites
+
+- **Python 3.6+**: Make sure you have Python installed. You can check your version using:
+  ```bash
+  python3 --version
