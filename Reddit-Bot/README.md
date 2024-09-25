@@ -50,5 +50,11 @@ This is a Reddit bot created in Python using the `praw` (Python Reddit API Wrapp
    python3 reddit_bot.py
 2. The bot will start performing actions based on the code sections that are uncommented.
 
+## Code Explanation
 
+- Connecting to Reddit's API: Establish a connection using credentials.
+- Retrieving Submissions: Access the top posts from a subreddit.
+- Submitting Posts: Create a new post in a specified subreddit.
+- Retrieving Comments: Extract and print comments from a specific Reddit post.
+- Replying to Comments: The bot searches for specific phrases in comments and replies accordingly.
 
