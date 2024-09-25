@@ -19,4 +19,7 @@ This is a Reddit bot created in Python using the `praw` (Python Reddit API Wrapp
 - **Python 3.6+**: Make sure you have Python installed. You can check your version using:
   ```bash
   python3 --version
+- **PRAW Library**: Install PRAW if you haven't already:
+  ```bash
+pip install praw
 
