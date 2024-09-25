@@ -32,5 +32,16 @@ This is a Reddit bot created in Python using the `praw` (Python Reddit API Wrapp
   1. Go to [Reddit's App Preferences](https://www.reddit.com/prefs/apps).
   2. Click on **"Create App"** and set up your Reddit application.
   3. Take note of your `client_id`, `client_secret`, `username`, and `password`.
+ 
+- **3. Configure the Bot**:
+
+  Update the `reddit_bot.py` file with your Reddit API credentials:
+  ```python
+  username = "YourUsername"   # Your Reddit username
+  password = "YourPassword"   # Your Reddit password
+  client_id = "YourClientID"  # Your app's client ID
+  client_secret = "YourClientSecret"  # Your app's secret key
+
+
 
 
