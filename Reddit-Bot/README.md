@@ -43,5 +43,12 @@ This is a Reddit bot created in Python using the `praw` (Python Reddit API Wrapp
   client_secret = "YourClientSecret"  # Your app's secret key
 
 
+## How to Run the Bot
+
+1. **Run the script:**
+   ```bash
+   python3 reddit_bot.py
+2. The bot will start performing actions based on the code sections that are uncommented.
+
 
 
