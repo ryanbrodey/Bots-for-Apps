@@ -21,5 +21,5 @@ This is a Reddit bot created in Python using the `praw` (Python Reddit API Wrapp
   python3 --version
 - **PRAW Library**: Install PRAW if you haven't already:
   ```bash
-pip install praw
+  pip install praw
 
