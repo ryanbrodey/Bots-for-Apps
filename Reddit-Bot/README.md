@@ -29,6 +29,6 @@ This is a Reddit bot created in Python using the `praw` (Python Reddit API Wrapp
   git clone https://github.com/yourusername/reddit-bot.git
   cd reddit-bot
 - **2. Create a Reddit App:**: 
-- hi
+-- hi
 
 
