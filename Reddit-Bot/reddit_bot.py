@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import praw
 
 # This section connects to the Reddit API using Python Code
@@ -46,7 +48,7 @@ reddit_instance = praw.Reddit(
 # This section gets comments from a subreddit post and replies to specific ones
 try:
     # Get the Reddit submission (post) by its ID
-    submission = reddit_instance.submission(id="1fmpv2m")  # Replace with the post ID you want to interact with
+    submission = reddit_instance.submission(id="1fh8ien")  # Replace with the post ID you want to interact with
 
     # Replace "MoreComments" objects to ensure all comments are loaded
     submission.comments.replace_more(limit=0)  # Use limit=0 to load all comments
@@ -54,16 +56,11 @@ try:
     # Loop through the top-level comments of the post
     for comment in submission.comments:
         # Check if the comment contains the phrase "network unavailable" (case-insensitive)
-        if "network unavailable" in comment.body.lower():
+        if "doll" in comment.body.lower():
             print(f"Found a comment: {comment.body}")  # Print the comment text
-            comment.reply("Not bad!")  # Reply to the comment
+            comment.reply("uhhhhhhh")  # Reply to the comment
             print("Replied to the comment")
 
 except Exception as e:
     # Catch and print any errors that occur while interacting with comments
     print(f"Error interacting with comments: {e}")
-
-
-
-
-        
