@@ -6,8 +6,8 @@ import praw
 # Define the credentials for connecting to Reddit's API
 username = "Responsible-Draw-99"   # Your Reddit username
 password = "tokoyami8"             # Your Reddit password
-client_id = "6DIPzFIUKu3OZF4J6jdxtw"  # Unique ID for your Reddit app
-client_secret = "ucuYqaeO10yeU8AkmQSpmMGfTIu6pg"  # Secret key for the Reddit app
+client_id = "6DIPIUKJ6ju3OZF4zdxtw"  # Unique ID for your Reddit app
+client_secret = "uc10yeQSuYU8AfTIu6kmqaeOpmMGpg"  # Secret key for the Reddit app
 
 # Create an instance of the Reddit API using the provided credentials
 reddit_instance = praw.Reddit(
