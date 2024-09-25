@@ -28,7 +28,10 @@ This is a Reddit bot created in Python using the `praw` (Python Reddit API Wrapp
   ```bash
   git clone https://github.com/yourusername/reddit-bot.git
   cd reddit-bot
-- **2. Create a Reddit App:**: 
--- hi
+- **2. Create a Reddit App**: 
+1. Go to [Reddit's App Preferences](https://www.reddit.com/prefs/apps).
+2. Click on **"Create App"** and set up your Reddit application.
+3. Take note of your `client_id`, `client_secret`, `username`, and `password`.
+
 
 
