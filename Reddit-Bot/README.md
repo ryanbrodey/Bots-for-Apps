@@ -58,3 +58,16 @@ This is a Reddit bot created in Python using the `praw` (Python Reddit API Wrapp
 - Retrieving Comments: Extract and print comments from a specific Reddit post.
 - Replying to Comments: The bot searches for specific phrases in comments and replies accordingly.
 
+## Error Handling
+
+The bot includes basic error handling, ensuring any interaction errors with Reddit comments are caught and displayed.
+
+## Important Notes
+
+- Ensure that you abide by Reddit's API Terms of Use and avoid spamming subreddits.
+- Be cautious with your credentials. Never share your client_id, client_secret, username, or password publicly.
+- This bot is intended for educational and testing purposes. Using it for automated tasks or interactions outside of Reddit's API guidelines may result in your account being banned.
+
+
+
+
